@@ -6,6 +6,7 @@ require('./index.css');
 // lifecycle event
 // UI
 
+/*
 class App extends React.Component {
   render() {
     return (
@@ -16,9 +17,18 @@ class App extends React.Component {
   }
 }
 
-
-
 ReactDOM.render(
     <App />,
     document.getElementById('app')
 );
+*/
+
+
+class HelloUser extends React.Component {
+  render() {
+    return (
+      <div> Hello, {this.props.name}</div>
+    )
+  }
+}
+ReactDOM.render(<HelloUser name="Tyler"/>, document.getElementById('app'));
